@@ -25,9 +25,38 @@
             <h1>Make Your Dream Come true</h1>
         </div>
         <div class="btn-grp">
-            <a href="#" class="btn">LOGIN</a>
-            <a href="#" class="btn">SIGNUP</a>
+            <a href="#modal-one" class="btn">LOGIN</a>
+            <a href="./ui/signup.html" class="btn">SIGNUP</a>
         </div>
+        <!-- Modal  https://stackoverflow.com/questions/31588871/it-can-make-a-modal-popup-window-with-just-html-and-css -->
+<div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Login Here</h2>
+      <a href="#close" class="btn-close" aria-hidden="true">×</a> <!--CHANGED TO "#close"-->
+    </div>
+    <div class="modal-body">
+        <div class="form-inbox">
+            <form action="">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" required>
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" required>
+            <br>
+            <input type="submit" value="Login">
+            <br>
+            <a href="#">Forget passord?</a><br>
+            <a href="#">Don't have an account?</a>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#close" class="btn">Nice!</a>  <!--CHANGED TO "#close"-->
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
     </header>
 </body>
 </html>

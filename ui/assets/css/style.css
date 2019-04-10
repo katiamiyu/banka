@@ -220,7 +220,7 @@ a:hover#menu-icon{
         width: 250px;
         margin-bottom: 20px;
     }
-    .form-inbox input[type=text], input[type="password"], input[type="email"], input[type="number"]{
+    .form-inbox input[type=text], .form-inbox input[type="password"], .form-inbox input[type="email"], .form-inbox input[type="number"]{
         border: none;
         border-bottom: 1px solid #111;
         background: transparent;

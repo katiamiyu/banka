@@ -1,0 +1,47 @@
+
+.form-wrapper{
+    width: 40%;
+    margin: 50px auto;
+    background-color: #f3f3f3;
+}
+.form-gr{
+    overflow: hidden;
+    width:90%;
+    padding: 20px 0 0 25px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    width:100%;
+    height: 30px;
+    padding: 5px 10px;
+}
+.one-two{
+    width: 48%;
+}
+.leftfloat{
+    float: left;
+}
+.rightfloat{
+    float: right;
+}
+input[type=radio]{
+    padding-right: 10px;
+}
+input[type=submit]{
+    width: 150px;
+    padding: 10px 0;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width:760px){
+    .one-two{
+        width:100%;
+    }
+    .form-wrapper{
+        width:90%;
+    }
+    .rightfloat{
+        padding-top: 20px;
+    }
+}

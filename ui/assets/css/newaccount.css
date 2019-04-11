@@ -1,0 +1,143 @@
+a{text-decoration: none;}
+.modal-header{
+    width: 100%;
+}
+ul{
+    margin: 30px 0 0 10px;
+}
+ul li{
+    list-style: none;
+    width: 65%;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #111;
+    margin-top: 5px;
+}
+ul li a{
+    color:#fff;
+}
+ul li a:hover{
+    font-weight: bold;
+}
+.main-services{
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    border:2px solid #f3f3f3;
+}
+.nav-services{
+    width:20%;
+    float: left;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+.sign-box{
+    box-sizing: border-box;
+    width:100%;
+    padding-top: 20px;
+}
+ul{ 
+    padding-top: 20px;
+}
+.form-wrapper{
+    overflow: hidden;
+    float:left;
+    width: 75%;
+}
+.form-gr{
+    box-sizing: border-box;
+    overflow: hidden;
+    width:95%;
+    padding: 0 0 20px 30px;
+}
+input[type=text], input[type=password], input[type=email]{
+    width:100%;
+    height: 30px;
+    padding: 5px 10px;
+}
+.acc-type{
+    float:left;
+    width:22%;
+}
+.acc-type select{
+    width:95%;
+    height: 30px;
+    padding: 5px 10px;
+}
+.dob{
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+}
+.one-two{
+    float:left;
+    width: 45%;
+    padding-right: 10px;
+}
+input[type=submit]{
+    width: 150px;
+    padding: 10px 0;
+}
+@media screen and (max-width:1100px){
+    ul li a{
+        font-size: 80%;
+    }
+    ul li{
+        list-style: none;
+        width: 62%;
+        padding: 10px;
+        text-align: center;
+        background-color: #111;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:800px){
+    .main-services{
+        border: 2px solid #f3f3f3;
+    }
+    .one-two{
+        width:100%;
+        padding-bottom: 20px;
+    }
+    .form-wrapper{
+        width:90%;
+    }
+    .acc-type{
+        width:100%;
+        padding-bottom: 20px;
+    }
+    .acc-type select{
+        width:100%;
+    }
+    input[type=text], input[type=password], input[type=email]{
+        width:100%;
+    }
+    .dob{
+        width: 45%;
+    }
+    .nav-services{
+        width:100%;
+        height: fit-content;
+    }
+    ul{
+        margin:0 auto;
+        padding: 0;
+    }
+
+    ul li{
+        margin-top:0;
+        float: left;
+        list-style: none;
+        width: fit-content;
+        padding:10px;
+        text-align: none;
+        background-color: transparent;
+    }
+    ul li a{
+        color:#111;
+        font-size: 100%;
+    }
+    ul li a:hover{
+        font-weight: bold;
+    }
+}

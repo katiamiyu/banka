@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/newaccount.css">
+</head>
+<body>
+        <div class="main-services">
+                <div class="nav-services">
+                    <ul>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">Manage</a></li>
+                        <li><a href="#">Transactions</a></li>
+                        <li><a href="#">Back</a></li>
+                        <li><a href="#">Sign out</a></li>
+                    </ul>
+                </div>
+                <div class="form-wrapper">
+                    <div class="modal-header">
+                            <h2>Create Account</h2>
+                        </div>
+                        <div class="sign-box">
+                            <form action="">
+                                <div class="form-gr">
+                                        <label for="lname" class="one-two">Last-name:
+                                            <input type="text" name="lname" placeholder="Last name" required>
+                                        </label>
+                                        <label for="oname" class="one-two">Other-names: 
+                                            <input type="text" name="oname" placeholder="Other names" required>
+                                        </label>
+                                </div>
+                                <div class="form-gr">
+                                    <label for="email" class="one-two">Email: 
+                                                <input type="email" id="email" name="" placeholder="someone@mail.com" required>
+                                    </label>
+                                    <label for="phone" class="one-two">Phone:
+                                        <input type="text" name="" id="phone" placeholder="+234" required>
+                                    </label>
+                                </div>
+                                <div class="form-gr" class="one-two">
+                                    <label for="address">Address:
+                                        <br>
+                                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form-gr">
+                                    <label for="accountname" class="one-two">Account-Name
+                                        <input type="text" name="accountname" id="account-name">
+                                    </label>
+                                    <label for="accountname" class="acc-type">Type:
+                                        <select>
+                                            <option>Choose</option>
+                                            <option value="savings">Savings</option>
+                                            <option value="current">Current</option>
+                                    </select>
+                                    </label>
+                                    <label for="currency" class="acc-type">Currency:
+                                        <select>
+                                            <option>Choose</option>
+                                            <option value="naira">Naira</option>
+                                            <option value="dollar">Dollar</option>
+                                            <option value="pound">Pound</option>
+                                    </select> 
+                                    </label>
+                                </div>                
+                                <div class="form-gr">
+                                        <label for="dob">Date of Birth:
+                                            <select name="" id="" class="dob">
+                                                <option value="">Month</option>
+                                            </select>
+                                            <select name="" id="" class="dob" >
+                                                <option value="">Day</option>
+                                            </select>
+                                            <select name="" id="" class="dob">
+                                                <option value="">Year</option>
+                                            </select>
+                                        </label>
+                                </div>
+                                <div class="form-gr">
+                                    <input type="radio" name="" id=""> Male  <input type="radio" name="" id=""> Female
+                                </div>
+                                <div class="form-gr">
+                                    <input type="checkbox" name="" id=""> I Accept Terms and Conditions
+                                </div>
+                                <div class="form-gr">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                 </div>
+        </div>
+</body>
+</html>

@@ -11,17 +11,20 @@
         <div class="main-services">
                 <div class="nav-services">
                     <ul>
-                        <li><a href="#" class="current">View</a></li>
-                        <li><a href="#">History</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">Manage</a></li>
+                        <li><a href="#">Credit</a></li>
+                        <li><a href="#">Debit</a></li>
                         <li><a href="#">Sign out</a></li>
                     </ul>
                 </div>
                 <div class="form-wrapper">
-                        <div class="modal-header">
-                            <h2>View Account: <span id="accno">#0002345000</span></h2>
+                    <div class="modal-header">
+                            <h2>Debit Account: <span id="accno">#0002345000</span></h2>
                         </div>
                         <div class="sign-box">
-                            <div class="form-gr">
+                            <form action="">
+                                <div class="form-gr">
                                             <label for="lname" class="one-two">Last-name:
                                                <p id="lastname">Tiamiyu</p>
                                             </label>
@@ -37,23 +40,7 @@
                                         <p id="phone">0703271600</p>
                                     </label>
                                 </div>
-                                <div class="form-gr" class="one-two">
-                                    <label for="address">Address:
-                                        <br>
-                                        <p id="address">28, Adebayo street, ijeshatedo, surulere, lagos.</p>
-                                    </label>
-                                </div>
-                                <div class="form-gr">
-                                        <label for="dob" class="one-two">Date of Birth:
-                                            <p id="dob">13-03-2000</p>
-                                        </label>
-                                        <label for="gender" class="one-two">Gender: 
-                                            <p id="gender">Male</p>
-                                        </label>
-                                </div>
-                                <div class="form-gr">
-                                    
-                                </div>
+                                
                                 <div class="form-gr">
                                     <label for="accountname" class="one-two">Account-Name
                                         <p id="accname">Aderemu plc</p>
@@ -61,10 +48,22 @@
                                     <label for="accountname" class="acc-type">Type:
                                         <p id="acctype">Current</p>
                                     </label>
-                                    <label for="currency" class="acc-type">Currency:
-                                        <p id="currency">Naira</p> 
+                                </div>
+
+                                <div class="form-gr">
+                                    <label for="amount" class="one-two">Amount:
+                                        <br>
+                                        <input type="number" name="amount" id="amount" minlength="10">
                                     </label>
-                         </div>
+                                    <label for="currency" class="acc-type">Currency:
+                                            <p id="currency">Naira</p> 
+                                    </label>
+                                </div>
+
+                                <div class="form-gr">
+                                    <input type="submit" value="Debit">
+                                </div>
+                            </form>
                         </div>
                  </div>
         </div>

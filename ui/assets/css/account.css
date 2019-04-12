@@ -53,6 +53,15 @@ input[type=text], input[type=password], input[type=email]{
     height: 30px;
     padding: 5px 10px;
 }
+input[type=number]{
+    height: 30px;
+    padding: 5px 10px;
+}
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 textarea{
     width:91%;
     height: 70px;

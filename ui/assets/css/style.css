@@ -106,47 +106,8 @@ a:hover#menu-icon{
     color:#111;
 
 }
-@media screen and (max-width:760px){
-    h1{
-        font-size:160%;
-    }
-    #menu-icon{
-        display: inline-block;
-    }
-    #menu-icon i{
-        display: block;
-        color:#111;
-    }
-    nav{
-        float: right;
-        margin-top: 13px;
-    }
-    
-    nav ul, nav:active ul{
-        display: none;
-        z-index: 1000;
-        position: absolute;
-        padding: 20px;
-        background: #fff transparent;
-        right: 65px;
-        top: 40px;
-        border: 1px solid #111;
-        width: 20%;
-        min-height: 120px;
-        opacity: 0.8;
-    }
-    nav ul li{
-        line-height:1.5;
-        width: 100%;
-        padding-bottom: 10px;
-    }
-   
-    nav:hover ul{
-        display: block;
-    }
-}
 
-    .btn-close {
+.btn-close {
     color: #aaaaaa;
     font-size: 30px;
     text-decoration: none;
@@ -242,3 +203,132 @@ a:hover#menu-icon{
         padding:0;
         font-weight: bold;
     }
+
+    /* gridview */
+        .row{
+            overflow: hidden;
+            box-sizing: content-box;
+            width:100%;
+            background-color: #fff;
+        }
+        /* .row{
+            box-sizing: border-box;
+            overflow: hidden;
+            width:95%;
+            
+        } */
+      .column{
+        box-sizing: border-box;
+          font-size: 90%;
+          height:30px;
+          padding-top:5px;
+          text-align: center;
+          float:left;
+          border-bottom: 1px solid #111;
+      }
+      #viewbutton{
+          width: 80px;
+          height: 22px;
+      }
+    #sn{
+         width: 5%;
+         border-right: 1px solid #111;  
+    }
+    #acc{
+        width: 20%;
+        border-right: 1px solid #111;  
+    }
+    #name{
+        width: 30%;
+        border-right: 1px solid #111;  
+    }
+    #type{
+        width: 8%;
+        border-right: 1px solid #111;  
+    }
+    #bal{
+        width: 15%;
+        border-right: 1px solid #111; 
+    }
+    #status{
+        width: 7%;
+        border-right: 1px solid #111;  
+    }
+    #action{
+        width: 15%;
+    }
+    #headerrow{
+        background-color: #f3f3f3;
+        font-weight:bold;
+        border-top: 1px solid #111;
+    }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .row h3{
+          text-align: center;
+      }
+      .row button{
+        width:31%;
+        height: 20px;
+    }
+    @media screen and (max-width:760px){
+        h1{
+            font-size:160%;
+        }
+        #menu-icon{
+            display: inline-block;
+        }
+        #menu-icon i{
+            display: block;
+            color:#111;
+        }
+        nav{
+            float: right;
+            margin-top: 13px;
+        }
+        
+        nav ul, nav:active ul{
+            display: none;
+            z-index: 1000;
+            position: absolute;
+            padding: 20px;
+            background: #fff transparent;
+            right: 65px;
+            top: 40px;
+            border: 1px solid #111;
+            width: 20%;
+            min-height: 120px;
+            opacity: 0.8;
+        }
+        nav ul li{
+            line-height:1.5;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+       
+        nav:hover ul{
+            display: block;
+        }
+        /*    mini-gridview   */
+        .column-1, .column-2, .column-3{
+            font-size:80%;
+            width: 40%;
+        }
+        .colomn{
+            height:20px;
+        }
+      .row h3{
+        font-size: 110%;
+      }
+      .row button{
+        width:28%;
+        height: 15px;
+    }
+    /*    end of mini-gridview    */
+    }
+    

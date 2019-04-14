@@ -95,7 +95,7 @@ textarea{
     width: 45%;
     padding-right: 10px;
 }
-input[type=submit]{
+input[type=submit], #newuser {
     width: 100px;
     padding: 5px 0;
 }
@@ -169,5 +169,9 @@ fieldset{
     }
     ul li a:hover{
         font-weight: bold;
+    }
+    input[type=submit], #newuser {
+        width: 70px;
+        padding: 3px 0;
     }
 }

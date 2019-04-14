@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/account.css">
+    <link rel="stylesheet" href="./assets/css/viewaccount.css">
+</head>
+<body>
+        <div class="main-services">
+                <div class="nav-services">
+                    <ul>
+                        <li><a href="../index.html">Banka</a></li>
+                        <li><a href="./transaction.html">Transactions</a></li>
+                        <li><a href="./acounts.html">Manage Accounts</a></li>
+                        <li><a href="./users.html">Manage Users</a></li>
+                        <li><a href="#">Sign out</a></li>
+                    </ul>
+                </div>
+                <div class="form-wrapper">
+                        <div class="modal-header">
+                            <h2>New user</h2>
+                        </div>
+                        <div class="sign-box">
+                                <form action="">
+                                        <div class="form-gr">
+                                                <label for="lname" class="one-two">Last-name:
+                                                    <input type="text" name="lname" placeholder="Last name" required>
+                                                </label>
+                                                <label for="oname" class="one-two">Other-names: 
+                                                    <input type="text" name="oname" placeholder="Other names" required>
+                                                </label>
+                                        </div>
+                                        <div class="form-gr">
+                                            <label for="email" class="one-two">Email: 
+                                                        <input type="email" id="email" name="" placeholder="someone@mail.com" required>
+                                            </label>
+                                            <label for="phone" class="one-two">Phone:
+                                                <input type="text" name="" id="phone" placeholder="+234" required>
+                                            </label>
+                                        </div>
+                                        <div class="form-gr">
+                                                <label for="password" class="one-two">Password: 
+                                                        <input type="password" name="" class="one-two" placeholder="Password" required>
+                                                </label>
+                                                <label for="confirm" class="one-two">Confirm: 
+                                                        <input type="password" name="" class="one-two" placeholder="Re-type Password" required>
+                                                </label>
+                                            </div>
+                                        <div class="form-gr">
+                                            <label for="role" class="acc-type">Role:
+                                                <select>
+                                                    <option>Choose</option>
+                                                    <option value="staff">Staff</option>
+                                                    <option value="admin">Admin</option>
+                                                </select>
+                                            </label>
+                                            <label for="status" class="acc-type">Status:
+                                                    <select>
+                                                        <option>Choose</option>
+                                                        <option value="activate">Activate</option>
+                                                        <option value="deactivate">Deactivate</option>
+                                                    </select>
+                                            </label>
+                                        </div>                
+                                        <div class="form-gr">
+                                            <input type="radio" name="" id=""> Male  <input type="radio" name="" id=""> Female
+                                        </div>
+                                        <div class="form-gr">
+                                            <input type="submit" value="Submit">
+                                        </div>
+                                    </form>                         
+                        </div>
+                 </div>
+        </div>
+</body>
+</html>

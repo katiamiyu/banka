@@ -231,10 +231,11 @@ a:hover#menu-icon{
           width: 60px;
           height: 22px;
       }
-      #historybutton{
+      #historybutton, #removebutton{
         width: 60px;
         height: 22px;
     }
+    /* account gridview  */
     #sn{
          width: 5%;
          border-right: 1px solid #111;  
@@ -280,6 +281,27 @@ a:hover#menu-icon{
       .row button{
         width:31%;
         height: 20px;
+    }
+    /* user gridview */
+    #id{
+        width:5%;
+        border-right: 1px solid #111;
+    }
+    #username{
+        width: 20%;
+        border-right: 1px solid #111;
+    }
+    #useremail{
+        width: 25%;
+        border-right: 1px solid #111;
+    }
+    #userpassword{
+        width: 15%;
+        border-right: 1px solid #111;
+    }
+    #authority{
+        width: 9%;
+        border-right: 1px solid #111;
     }
     @media screen and (max-width:760px){
         h1{
@@ -341,7 +363,7 @@ a:hover#menu-icon{
           float:left;
           border-bottom: 1px solid #111;
       }
-      #viewbutton{
+      #viewbutton,#historybutton, #removebutton{
           width: 70px;
           height: 22px;
       }
@@ -377,5 +399,23 @@ a:hover#menu-icon{
         height: 15px;
     }
     /*    end of mini-gridview    */
+    /* user gridview  */
+    #id{
+        width:10%;
+        border-left: 1px solid #111;
+    }
+    #username{
+        width: 45%;
+    }
+    #useremail{
+        width: 45%;
+    }
+    #userpassword{
+        width: 28%;
+        border-left: 1px solid #111;
+    }
+    #authority{
+        width: 12%;
+    }
     }
     

@@ -11,19 +11,20 @@
         <div class="main-services">
                 <div class="nav-services">
                     <ul>
-                        <li><a href="#">Create</a></li>
-                        <li><a href="#">Manage</a></li>
-                        <li><a href="./credit.html">Credit</a></li>
-                        <li><a href="./debit.html" class="current">Debit</a></li>
+                        <li><a href="../index.html">Banka</a></li>
+                        <li><a href="./transaction.html">Transactions</a></li>
+                        <li><a href="./acounts.html" class="current">Manage Accounts</a></li>
+                        <li><a href="#">Manage Users</a></li>
                         <li><a href="#">Sign out</a></li>
                     </ul>
                 </div>
                 <div class="form-wrapper">
-                    <div class="modal-header">
-                            <h2>Debit Account: <span id="accno">#0002345000</span></h2>
+                        <div class="modal-header">
+                            <h2>Account: <span id="accno">#0002345000</span></h2>
                         </div>
                         <div class="sign-box">
-                            <form action="">
+                            <fieldset>
+                                <legend>Account Detail</legend>
                                 <div class="form-gr">
                                             <label for="lname" class="one-two">Last-name:
                                                <p id="lastname">Tiamiyu</p>
@@ -40,30 +41,40 @@
                                         <p id="phone">0703271600</p>
                                     </label>
                                 </div>
-                                
+                                <div class="form-gr" class="one-two">
+                                    <label for="address">Address:
+                                        <br>
+                                        <p id="address">28, Adebayo street, ijeshatedo, surulere, lagos.</p>
+                                    </label>
+                                </div>
+                                <div class="form-gr">
+                                        <label for="dob" class="one-two">Date of Birth:
+                                            <p id="dob">13-03-2000</p>
+                                        </label>
+                                        <label for="gender" class="one-two">Gender: 
+                                            <p id="gender">Male</p>
+                                        </label>
+                                </div>
+                                <div class="form-gr">
+                                    
+                                </div>
                                 <div class="form-gr">
                                     <label for="accountname" class="one-two">Account-Name
                                         <p id="accname">Aderemu plc</p>
                                     </label>
-                                    <label for="accountname" class="acc-type">Type:
+                                    <label for="accountname" class="one-two">Type:
                                         <p id="acctype">Current</p>
                                     </label>
                                 </div>
-
                                 <div class="form-gr">
-                                    <label for="amount" class="one-two">Amount:
-                                        <br>
-                                        <input type="number" name="amount" id="amount" minlength="10">
-                                    </label>
-                                    <label for="currency" class="acc-type">Currency:
+                                        <label for="accountname" class="one-two">Balance:
+                                            <p id="balance">#300,000.00</p>
+                                        </label>
+                                        <label for="currency" class="one-two">Currency:
                                             <p id="currency">Naira</p> 
-                                    </label>
-                                </div>
-
-                                <div class="form-gr">
-                                    <input type="submit" value="Debit">
-                                </div>
-                            </form>
+                                         </label>
+                                    </div>
+                            </fieldset>
                         </div>
                  </div>
         </div>

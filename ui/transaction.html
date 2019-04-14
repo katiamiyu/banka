@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/account.css">
+    <link rel="stylesheet" href="./assets/css/viewaccount.css">
+</head>
+<body>
+        <div class="main-services">
+                <div class="nav-services">
+                    <ul>
+                        <li><a href="../index.html">Banka</a></li>
+                        <li><a href="./transaction.html">Transactions</a></li>
+                        <li><a href="./acounts.html">Manage Accounts</a></li>
+                        <li><a href="#">Manage Users</a></li>
+                        <li><a href="#">Sign out</a></li>
+                    </ul>
+                </div>
+                <div class="form-wrapper">
+                    <div class="modal-header">
+                            <h2>Transactions</h2>
+                        </div>
+                        <div class="sign-box">
+                            <dim class="form-gr">
+                                <label for="account-number" id="accno">Account:
+                                    <input type="number" name="lname" placeholder="e.g 11223332211" required>
+                                    <input type="submit" value="Find">
+                                </label>
+                            </dim>
+                            <fieldset>
+                                <legend>Account Details</legend>
+                                <div class="form-gr">
+                                        <label for="lname" class="one-two">Last-name:
+                                           <p id="lastname">Tiamiyu</p>
+                                        </label>
+                                        <label for="oname" class="one-two">Other-names: 
+                                            <p id="othernames">Adebayo Q</p>
+                                        </label>
+                                </div>
+                            <div class="form-gr">
+                                <label for="email" class="one-two">Email: 
+                                    <p id="email">katiamiyu@gmail.com</p>
+                                </label>
+                                <label for="phone" class="one-two">Phone:
+                                    <p id="phone">0703271600</p>
+                                </label>
+                            </div>
+                            
+                            <div class="form-gr">
+                                <label for="accountname" class="one-two">Account-Name
+                                    <p id="accname">Aderemu plc</p>
+                                </label>
+                                <label for="accountname" class="acc-type">Type:
+                                    <p id="acctype">Current</p>
+                                </label>
+                            </div>
+                            <div class="form-gr">
+                                    <label for="Balance" class="one-two">Balance:
+                                        <p id="accBal">#120,000.00</p>
+                                    </label>
+                                    <label for="currency" class="acc-type">Currency:
+                                            <p id="currency">Naira</p> 
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-gr">
+                                    <label for="amountbox">Amount:
+                                        <input type="number" name="amount" id="amount">
+                                    </label>
+                                    <label for="accountname" class="acc-type">
+                                        <select>
+                                            <option>Choose</option>
+                                            <option value="credit">Credit</option>
+                                            <option value="debit">Debit</option>
+                                        </select>
+                                    </label>
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </fieldset>
+                        </div>
+                 </div>
+        </div>
+</body>
+</html>

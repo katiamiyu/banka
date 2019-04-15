@@ -1,0 +1,421 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Century Gothic;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 200%;
+    font-weight: 800;
+    line-height:155%;
+}
+h2{
+    font-size: 140%;
+    font-weight: 600;
+    line-height:155%;
+}
+h3{
+    font-size: 120%;
+    line-height:155%;
+    font-weight: 400;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner3.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header a{
+    text-decoration: none;
+}
+#logo{
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 700;
+    color:#111;;
+    display: block;
+    margin-top:15px;
+    width:150px;
+    height:auto;
+    border:1px solid #000;
+    float:left;
+}
+nav{
+    float: right;
+    margin-top: 25px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #111;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+nav ul li a:hover,  nav ul li a.active{
+    background-color: #fff;
+    color:#111;
+}
+#menu-icon i{
+    display: none;
+    color: #111;
+    font-size:200%;
+}
+a:hover#menu-icon{
+    border-radius: 4px 4px 0 0;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-text h1, h2{
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px #f1f1f1;
+}
+.header-text h2{
+}
+.btn-grp{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color:#111;
+
+}
+
+.btn-close {
+    color: #aaaaaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    }
+    .btn-close:hover {
+    color: #919191;
+    }
+    .modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    }
+    .modal:target:before {
+    display: block;
+    }
+    .modal:target .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 20%;
+    }
+    .modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 1px;
+    border-radius: 5px;
+    margin-left: -200px;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    z-index: 11;
+    width: 360px;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    }
+    .modal-body {
+    padding: 20px;
+    }
+    .modal-header,
+    .modal-footer {
+    padding: 10px 20px;
+    }
+    .modal-header {
+    border-bottom: #eeeeee solid 1px;
+    }
+    .modal-header h2 {
+    font-size: 20px;
+    }
+    .modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+    }
+    /*ADDED TO STOP SCROLLING TO TOP*/
+    #close {
+    display: none;
+    }
+    .form-inbox input{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .form-inbox input[type=text], .form-inbox input[type="password"], .form-inbox input[type="email"], .form-inbox input[type="number"]{
+        border: none;
+        border-bottom: 1px solid #111;
+        background: transparent;
+        outline: none;
+        height:40px;
+        font-size: 100%;
+    }
+    .form-inbox input[type=submit]{
+        border: none;
+        outline:none;
+        height:40px;
+        background: #111;
+        color: #fff;
+        font-size:100%;
+        border-radius: 20px;
+    }
+    .form-inbox p{
+        margin:0;
+        padding:0;
+        font-weight: bold;
+    }
+
+    /* gridview */
+        .row{
+            overflow: hidden;
+            box-sizing: content-box;
+            width:100%;
+            background-color: #fff;
+        }
+        /* .row{
+            box-sizing: border-box;
+            overflow: hidden;
+            width:95%;
+            
+        } */
+      .column{
+        box-sizing: border-box;
+          font-size: 90%;
+          height:30px;
+          padding-top:5px;
+          text-align: center;
+          float:left;
+          border-bottom: 1px solid #111;
+      }
+      #viewbutton{
+          margin-right: 2px;
+          width: 60px;
+          height: 22px;
+      }
+      #historybutton, #removebutton{
+        width: 60px;
+        height: 22px;
+    }
+    /* account gridview  */
+    #sn{
+         width: 5%;
+         border-right: 1px solid #111;  
+    }
+    #acc{
+        width: 17%;
+        border-right: 1px solid #111;  
+    }
+    #name{
+        width: 25%;
+        border-right: 1px solid #111;  
+    }
+    #type{
+        width: 8%;
+        border-right: 1px solid #111;  
+    }
+    #bal{
+        width: 19%;
+        border-right: 1px solid #111; 
+    }
+    #status{
+        width: 6%;
+        border-right: 1px solid #111;  
+    }
+    #action{
+        width: 20%;
+    }
+    #headerrow{
+        background-color: #f3f3f3;
+        font-weight:bold;
+        border-top: 1px solid #111;
+    }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .row h3{
+          text-align: center;
+      }
+      .row button{
+        width:31%;
+        height: 20px;
+    }
+    /* user gridview */
+    #id{
+        width:5%;
+        border-right: 1px solid #111;
+    }
+    #username{
+        width: 20%;
+        border-right: 1px solid #111;
+    }
+    #useremail{
+        width: 25%;
+        border-right: 1px solid #111;
+    }
+    #userpassword{
+        width: 15%;
+        border-right: 1px solid #111;
+    }
+    #authority{
+        width: 9%;
+        border-right: 1px solid #111;
+    }
+    @media screen and (max-width:760px){
+        h1{
+            font-size:160%;
+        }
+        #menu-icon{
+            display: inline-block;
+        }
+        #menu-icon i{
+            display: block;
+            color:#111;
+        }
+        nav{
+            float: right;
+            margin-top: 13px;
+        }
+        
+        nav ul, nav:active ul{
+            display: none;
+            z-index: 1000;
+            position: absolute;
+            padding: 20px;
+            background: #fff transparent;
+            right: 65px;
+            top: 40px;
+            border: 1px solid #111;
+            width: 20%;
+            min-height: 120px;
+            opacity: 0.8;
+        }
+        nav ul li{
+            line-height:1.5;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+       
+        nav:hover ul{
+            display: block;
+        }
+        /* gridview */
+        .row{
+            overflow: hidden;
+            box-sizing: content-box;
+            width:100%;
+            background-color: #fff;
+        }
+        /* .row{
+            box-sizing: border-box;
+            overflow: hidden;
+            width:95%;
+            
+        } */
+      .column{
+        box-sizing: border-box;
+          font-size: 80%;
+          height:35px;
+          padding-top:5px;
+          text-align: center;
+          float:left;
+          border-bottom: 1px solid #111;
+      }
+      #viewbutton,#historybutton, #removebutton{
+          width: 70px;
+          height: 22px;
+      }
+    #sn{
+         width: 10%;
+    }
+    #acc{
+        width: 45%; 
+    }
+    #name{
+        width: 45%;
+    }
+    #type{
+        width: 10%; 
+    }
+    #bal{
+        width: 30%; 
+    }
+    #status{
+        width: 10%; 
+    }
+    #action{
+        width: 50%;
+        border-right: 1px solid #111;
+    }
+    #headerrow{
+        background-color: #f3f3f3;
+        font-weight:bold;
+        border-top: 1px solid #111;
+    }
+      .row button{
+        width:28%;
+        height: 15px;
+    }
+    /*    end of mini-gridview    */
+    /* user gridview  */
+    #id{
+        width:10%;
+        border-left: 1px solid #111;
+    }
+    #username{
+        width: 45%;
+    }
+    #useremail{
+        width: 45%;
+    }
+    #userpassword{
+        width: 28%;
+        border-left: 1px solid #111;
+    }
+    #authority{
+        width: 12%;
+    }
+    }
+    

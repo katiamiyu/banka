@@ -95,7 +95,7 @@ textarea{
     width: 45%;
     padding-right: 10px;
 }
-input[type=submit], #newuser {
+input[type=submit], #newuser , #backbtn{
     width: 100px;
     padding: 5px 0;
 }

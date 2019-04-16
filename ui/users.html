@@ -5,16 +5,16 @@
     <title></title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/account.css">
-    <link rel="stylesheet" href="./assets/css/viewaccount.css">
+    <link rel="stylesheet" href="./assets/css/usergrid.css">
 </head>
 <body>
         <div class="main-services">
                 <div class="nav-services">
                     <ul>
-                        <li><a href="../index.html">Banka</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="./transaction.html">Transactions</a></li>
-                        <li><a href="./acounts.html">Manage Accounts</a></li>
-                        <li><a href="#">Manage Users</a></li>
+                        <li><a href="./accounts.html">Manage Accounts</a></li>
+                        <li><a href="./users.html" class="current">Manage Users</a></li>
                         <li><a href="#">Sign out</a></li>
                     </ul>
                 </div>
@@ -23,15 +23,13 @@
                             <h2>Users</h2>
                         </div>
                         <div class="sign-box">
-                                <form action="">
                                     <dim class="form-gr">
                                         <label for="user" id="accno">User Id:
                                             <input type="number" name="userid" placeholder="e.g 0001">
-                                            <input type="submit" value="Find">
                                         </label>
-                                        <button id="newuser">Create</button>
+                                        <input type="submit" value="Find">
+                                        <button id="newuser" onclick="location.href='./adminsignup.html'">Create</button>
                                     </dim>
-                                </form>
                             <fieldset>
                                     <legend>Available Users</legend>
                                 <div class="form-gr">
@@ -75,15 +73,15 @@
                                         admin
                                     </div>
                                     <div class="column" id="status">
-                                        A
+                                        Active
                                     </div>
                                     <div class="column" id="action">
-                                         <button id="viewbutton">View</button><button id="removebutton">Remove</button>
+                                         <button id="viewbutton" onclick="location.href='./user.html'">View</button><button id="removebutton">Remove</button>
                                     </div>
                                 </div>
                                 <div class="row">
                                         <div class="column" id="id">
-                                             0001
+                                             0002
                                         </div>
                                         <div class="column" id="username">
                                              katiamiyu
@@ -98,7 +96,7 @@
                                             admin
                                         </div>
                                         <div class="column" id="status">
-                                            A
+                                            Inactive
                                         </div>
                                         <div class="column" id="action">
                                              <button id="viewbutton">View</button><button id="removebutton">Remove</button>
@@ -106,10 +104,10 @@
                                     </div>
                                     <div class="row">
                                             <div class="column" id="id">
-                                                 0001
+                                                 0003
                                             </div>
                                             <div class="column" id="username">
-                                                 katiamiyu
+                                                 Mafoluku
                                             </div>
                                             <div class="column" id="useremail">
                                                  katiamiyu@gmail.com
@@ -121,7 +119,7 @@
                                                 admin
                                             </div>
                                             <div class="column" id="status">
-                                                A
+                                                Active
                                             </div>
                                             <div class="column" id="action">
                                                  <button id="viewbutton">View</button><button id="removebutton">Remove</button>

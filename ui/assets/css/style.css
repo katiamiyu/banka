@@ -35,14 +35,12 @@ header a{
 #logo{
     text-decoration: none;
     text-align: center;
-    font-size: 150%;
+    font-size: 160%;
     font-weight: 700;
     color:#111;;
-    display: block;
     margin-top:15px;
     width:150px;
     height:auto;
-    border:1px solid #000;
     float:left;
 }
 nav{
@@ -57,11 +55,17 @@ nav ul li{
     float: left;
 }
 nav ul li a{
-    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #111;
+    margin: 2px;
+    transition: 0.6s ease;
+    /* text-decoration: none;
     color: #111;
     padding: 5px 20px;
     border: 1px solid transparent;
-    transition: 0.6s ease;
+    transition: 0.6s ease; */
 }
 nav ul li a:hover,  nav ul li a.active{
     background-color: #fff;
@@ -157,7 +161,7 @@ a:hover#menu-icon{
     transition: transform 0.3s ease-out;
     }
     .modal-body {
-    padding: 20px;
+    padding: 30px 20px 10px 50px;
     }
     .modal-header,
     .modal-footer {
@@ -204,105 +208,8 @@ a:hover#menu-icon{
         font-weight: bold;
     }
 
-    /* gridview */
-        .row{
-            overflow: hidden;
-            box-sizing: content-box;
-            width:100%;
-            background-color: #fff;
-        }
-        /* .row{
-            box-sizing: border-box;
-            overflow: hidden;
-            width:95%;
-            
-        } */
-      .column{
-        box-sizing: border-box;
-          font-size: 90%;
-          height:30px;
-          padding-top:5px;
-          text-align: center;
-          float:left;
-          border-bottom: 1px solid #111;
-      }
-      #viewbutton{
-          margin-right: 2px;
-          width: 60px;
-          height: 22px;
-      }
-      #historybutton, #removebutton{
-        width: 60px;
-        height: 22px;
-    }
-    /* account gridview  */
-    #sn{
-         width: 5%;
-         border-right: 1px solid #111;  
-    }
-    #acc{
-        width: 17%;
-        border-right: 1px solid #111;  
-    }
-    #name{
-        width: 25%;
-        border-right: 1px solid #111;  
-    }
-    #type{
-        width: 8%;
-        border-right: 1px solid #111;  
-    }
-    #bal{
-        width: 19%;
-        border-right: 1px solid #111; 
-    }
-    #status{
-        width: 6%;
-        border-right: 1px solid #111;  
-    }
-    #action{
-        width: 20%;
-    }
-    #headerrow{
-        background-color: #f3f3f3;
-        font-weight:bold;
-        border-top: 1px solid #111;
-    }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      .row h3{
-          text-align: center;
-      }
-      .row button{
-        width:31%;
-        height: 20px;
-    }
-    /* user gridview */
-    #id{
-        width:5%;
-        border-right: 1px solid #111;
-    }
-    #username{
-        width: 20%;
-        border-right: 1px solid #111;
-    }
-    #useremail{
-        width: 25%;
-        border-right: 1px solid #111;
-    }
-    #userpassword{
-        width: 15%;
-        border-right: 1px solid #111;
-    }
-    #authority{
-        width: 9%;
-        border-right: 1px solid #111;
-    }
+   
+    
     @media screen and (max-width:760px){
         h1{
             font-size:160%;
@@ -341,81 +248,6 @@ a:hover#menu-icon{
         nav:hover ul{
             display: block;
         }
-        /* gridview */
-        .row{
-            overflow: hidden;
-            box-sizing: content-box;
-            width:100%;
-            background-color: #fff;
-        }
-        /* .row{
-            box-sizing: border-box;
-            overflow: hidden;
-            width:95%;
-            
-        } */
-      .column{
-        box-sizing: border-box;
-          font-size: 80%;
-          height:35px;
-          padding-top:5px;
-          text-align: center;
-          float:left;
-          border-bottom: 1px solid #111;
-      }
-      #viewbutton,#historybutton, #removebutton{
-          width: 70px;
-          height: 22px;
-      }
-    #sn{
-         width: 10%;
-    }
-    #acc{
-        width: 45%; 
-    }
-    #name{
-        width: 45%;
-    }
-    #type{
-        width: 10%; 
-    }
-    #bal{
-        width: 30%; 
-    }
-    #status{
-        width: 10%; 
-    }
-    #action{
-        width: 50%;
-        border-right: 1px solid #111;
-    }
-    #headerrow{
-        background-color: #f3f3f3;
-        font-weight:bold;
-        border-top: 1px solid #111;
-    }
-      .row button{
-        width:28%;
-        height: 15px;
-    }
-    /*    end of mini-gridview    */
-    /* user gridview  */
-    #id{
-        width:10%;
-        border-left: 1px solid #111;
-    }
-    #username{
-        width: 45%;
-    }
-    #useremail{
-        width: 45%;
-    }
-    #userpassword{
-        width: 28%;
-        border-left: 1px solid #111;
-    }
-    #authority{
-        width: 12%;
-    }
+   
     }
     

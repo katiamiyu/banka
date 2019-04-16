@@ -1,0 +1,51 @@
+{
+  "name": "banka",
+  "version": "1.0.0",
+  "description": "A system use to render financial services",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha src/spec/app.test.js --require babel-polyfill --require babel-register --exit",
+    "build": "babel src -d lib",
+    "start": "node lib/index.js",
+    "start-dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiamiyu/banka.git"
+  },
+  "keywords": [
+    "Banka",
+    "Bank",
+    "online",
+    "service",
+    "finance",
+    "institution"
+  ],
+  "author": "Katiamiyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiamiyu/banka/issues"
+  },
+  "homepage": "https://github.com/katiamiyu/banka#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "express": "^4.16.4",
+    "mocha": "^6.1.3",
+    "moment": "^2.24.0",
+    "nodemon": "^1.18.11",
+    "nyc": "^14.0.0",
+    "supertest": "^4.0.2"
+  }
+}

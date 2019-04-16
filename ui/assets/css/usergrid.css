@@ -13,12 +13,6 @@ label p{
     width:100%;
     background-color: #fff;
 }
-/* .row{
-    box-sizing: border-box;
-    overflow: hidden;
-    width:95%;
-    
-} */
 .column{
 box-sizing: border-box;
   font-size: 90%;
@@ -97,12 +91,6 @@ height: 22px;
         width:100%;
         background-color: #fff;
     }
-    /* .row{
-        box-sizing: border-box;
-        overflow: hidden;
-        width:95%;
-        
-    } */
   .column{
     box-sizing: border-box;
       font-size: 80%;

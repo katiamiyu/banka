@@ -53,7 +53,7 @@ const dropUserTable = () => {
 };
 
 pool.on('remove', () => {
-  console.log('release banka con');
+  console.log('release banka connection');
   process.exit(0);
 });
 

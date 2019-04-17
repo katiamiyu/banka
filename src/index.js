@@ -29,5 +29,4 @@ app.listen(PORT, () => {
   console.log(`app listening at PORT: ${PORT}`);
 });
 
-// export app object for testing
 export default app;

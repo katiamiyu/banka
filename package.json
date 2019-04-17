@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "create": "node dbManager.js createUserTable",
-    "drop":"node dbManager.js dropUserTable",
+    "drop": "node dbManager.js dropUserTable",
     "clean": "rm -rf lib",
     "build": "npm run drop && npm run create npm run clean && babel src -d lib",
     "start": "node lib/index.js",
     "start-dev": "nodemon --exec node lib/index.js",
-    "test": "nyc mocha lib/spec/index.test.js --timeout 20000 --exit"
+    "test": "nyc mocha --require babel-polyfill --require babel-register src/spec/index.test.js --timeout 20000 --exit"
   },
   "repository": {
     "type": "git",
@@ -37,10 +37,10 @@
     "nodemon": "^1.18.11"
   },
   "dependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",

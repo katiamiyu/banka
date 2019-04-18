@@ -3,7 +3,6 @@ import accountController from '../controllers/accountController';
 
 const accountRouter = express.Router();
 
-
 accountRouter.route('/accounts')
   .post(accountController.create);
 accountRouter.route('/accounts/:accountNumber')

@@ -9,5 +9,4 @@ accountRouter.route('/accounts/:accountNumber')
   .patch(accountController.changeStatus)
   .delete(accountController.remove);
 
-
 export default accountRouter;

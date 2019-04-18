@@ -22,6 +22,14 @@ const decode = {
     process.env.SECRET, { expiresIn: '7d' });
     return token;
   },
+  comfirmToken(token, key) {
+    jwt.verify(token, key, (err, authData) => {
+      if (err) {
+        return 'false';
+      }
+      return { authData };
+    });
+  },
 };
 
 export default decode;

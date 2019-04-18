@@ -4,10 +4,10 @@
   "description": "A system use to render financial services",
   "main": "index.js",
   "scripts": {
-    "create": "node dbManager.js createUserTable",
-    "drop": "node dbManager.js dropUserTable",
+    "create": "node dbManager.js createUserTable && node dbManager.js  createAccountTable",
+    "drop": "node dbManager.js dropUserTable && node dbManager.js  dropAccountTable",
     "clean": "rm -rf lib",
-    "build": "npm run drop && npm run create npm run clean && babel src -d lib",
+    "build": "babel src -d lib",
     "start": "node lib/index.js",
     "start-dev": "nodemon --exec node lib/index.js",
     "test": "nyc mocha --require babel-polyfill --require babel-register src/spec/index.test.js --timeout 20000 --exit"

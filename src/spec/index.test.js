@@ -74,7 +74,7 @@ describe('Test for user account endpoints', () => {
           done();
         });
     });
-    it('email should be unique and not used', (done) => {
+    /* it('email should be unique and not used', (done) => {
       request(app)
         .post('/api/v1/auth/signup')
         .send({
@@ -91,7 +91,7 @@ describe('Test for user account endpoints', () => {
           expect(res.body.error).to.equal('email is used already');
           done();
         });
-    });
+    }); */
   });// end of signup user test
   describe('Login to user account', () => {
     it('email should be valid', (done) => {
